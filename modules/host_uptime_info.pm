@@ -15,7 +15,7 @@ sub host_uptime_info
    if (defined($value))
       {
       $state = 0;
-      $output =  "uptime=" . duration_exact($value);
+      $output =  "uptime=" . duration_exact($value) . " | uptime=" . $value . ";;;" ;
       }
    return ($state, $output);
    }
